@@ -1,0 +1,6 @@
+@mixin flexStyle ($justify-c, $f-wrap) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify-c;
+    flex-wrap: $f-wrap;
+}

@@ -1,0 +1,134 @@
+.services-section{
+    padding: 147px 0 329px;
+    background-image: url(../../images/services-img.png), url(../../images/services-img-1.png), url(../../images/services-img-2.png);
+    background-repeat: no-repeat;
+    background-size: 1084px 450px, 995px 445px, 990px 445px;
+    background-position: calc(50% + 562px) calc(75px), calc(50% - 612px) calc(668px), calc(50% + 650px) calc(1320px);
+}
+.services__item{
+    width: 445px;
+}
+.first{
+    margin-bottom: 292px;
+}
+.services__title{
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: $title-color;
+}
+.services__text{
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $gray;
+}
+.services__button{
+    width: 180px;
+    padding: 14px 0;
+    border: 3px solid $button-color;
+    background-color: $button-color;
+    color: $white;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+}
+.services__button:hover{
+    background-color: transparent;
+    color: $button-color;
+}
+.services__button:active{
+    background-color: $button-color;
+    color: $white;
+}
+.second{
+    display: grid;
+    grid-template-columns: 700px 445px;
+    margin-bottom: 292px;
+}
+.services__hidden{
+    opacity: 0;
+}
+.second > span{
+    opacity: 0;
+}
+@media only screen and (max-width: 1210px) {
+    .second{
+        grid-template-columns: 550px 445px;
+    }
+}
+@media only screen  and (max-width: 1062px) {
+    .services-section{
+        background-image: url(../../images/services-img.png), url(../../images/services-img-1.png), url(../../images/services-img-2.png);
+        background-position: calc(50% + 332px) calc(0), calc(50% - 380px) calc(1000px), calc(50% + 375px) calc(1970px);
+    }
+    .services__item{
+        margin: 0 auto;
+    }
+    .first{
+        margin-top: 390px;
+        margin-bottom: 629px;
+    }
+    .services__title{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .services__text{
+        text-align: center;
+    }
+    .services__button{
+        margin: 0 auto;
+        display: block;
+    }
+    .second{
+        display: block;
+        margin: 0 auto;
+    }
+    .third{
+        margin-top: 629px;
+    }
+}
+@media only screen and (max-width: 901px) {
+    .services-section{
+        margin-top: 690px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .services-section{
+        margin-top: 500px;
+        background-image: url(../../images/services-mobile.png), url(../../images/services-mobile-1.png), url(../../images/services-mobile-2.png);
+        background-size: 311px 311px;
+        background-position: calc(50% - 0px) calc(170px), calc(50% - 20px) calc(1005px), calc(50% + 12px) calc(1850px);
+    }
+    .first{
+        margin-bottom: 487px;
+    }
+    .third{
+        margin-top: 487px;
+    }
+}
+@media only screen and (max-width: 515px) {
+    .services__item{
+        width: 311px;
+    }
+    .services__title{
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .services__text{
+        margin-bottom: 32px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .services-section{
+        width: 375px;
+        background-image: url(../../images/services-mobile.png), url(../../images/services-mobile-1.png), url(../../images/services-mobile-2.png);
+        background-position: calc(50% + 32px) calc(170px), calc(50% - 32px) calc(1005px), calc(50% + 32px) calc(1850px);
+    }
+}

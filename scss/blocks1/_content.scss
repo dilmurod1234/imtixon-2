@@ -1,0 +1,110 @@
+.content-section{
+    padding: 120px 0 160px;
+}
+.content__title{
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 64px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: $title-color;
+    letter-spacing: -2.14286px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.content + .content{
+    margin-top: 64px;
+}
+.content__title-1{
+    width: 350px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: $title-color;
+    letter-spacing: -1.78571px;
+}
+.content__dropdown-item{
+    width: 730px;
+    background: #F2F5F9;
+}
+.content__dropdown-item:hover{
+    background-color: #FFF4DF;;
+}
+.content__dropdown-item + .content__dropdown-item{
+    margin-top: 16px;
+}
+.content__top, .content__top2, .content__top3, .content__top4, .content__top5, .content__top6{
+    padding: 32px 40px;
+    @include flexStyle (space-between, nowrap);
+    cursor: pointer;
+}
+.content__subtitle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: $title-color;
+}
+.content__bottom, .content__bottom2, .content__bottom3, .content__bottom4, .content__bottom5, .content__bottom6{
+    transition: all 0.3s;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+.content__text, .content__text2, .content__text3, .content__text4, .content__text5, .content__text6{
+    padding: 0 40px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $title-color;
+}
+.content__img, .content__img2, .content__img3, .content__img4, .content__img5, .content__img6{
+    transition: transform 0.3s;
+}
+.show-text{
+    height: 105px;
+    overflow: visible;
+    opacity: 1;
+    padding-bottom: 32px;
+}
+.turn{
+    transform: rotate(180deg);
+}
+@media only screen and (max-width: 845px) {
+    .content__title{
+        width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .content__title-1{
+        width: 311px;
+        margin: 0 auto;
+        margin-bottom: 32px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .content{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content__dropdown-item{
+        width: 311px;
+    }
+    .show-text{
+        height: 230px;
+    }
+}
+@media (max-width: 375px) {
+    .content-section{
+        width: 375px;
+    }
+}

@@ -1,0 +1,77 @@
+.value-section{
+    padding: 120px 0;
+}
+.value__title{
+    width: 540px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: $title-color;
+    letter-spacing: -2.14286px;
+}
+.value__img{
+    margin-bottom: 32px;
+}
+.value__list{
+    @include flexStyle (center, wrap);
+    gap: 30px;
+}
+.value__item{
+    width: 350px;
+}
+.value__subtitle{
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: $title-color;
+    letter-spacing: -1.07143px;
+}
+.value__text{
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $gray;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    .value__img{
+        margin-left: 50px;
+    }
+    .value__title{
+        width: 457px;
+        margin-bottom: 87px;
+    }
+    .value__item{
+        width: 457px;
+    }
+}
+@media only screen and (max-width: 510px) {
+    .value__title{
+        width: 311px;
+        margin-bottom: 46px;
+    }
+    .value__img{
+        width: 240px;
+        height: 288px;
+        margin-bottom: 16px;
+        margin-left: 30px;
+    }
+    .value__item{
+        width: 311px;
+    }
+    .value__subtitle{
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .value-section{
+        width: 375px;
+    }
+}

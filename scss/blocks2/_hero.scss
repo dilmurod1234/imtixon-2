@@ -1,0 +1,30 @@
+.hero-section{
+    padding: 68px 0;
+    background-image: url(../../images/careers-bg.png);
+    background-size: cover;
+    background-position: right;
+}
+.hero__title{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    color: $white;
+    letter-spacing: -2.5px;
+}
+@media only screen and (max-width: 768px) {
+    .hero-section{
+        background-image: url(../../images/careers-tablet.png);
+    }
+}
+@media only screen and (max-width: 375px) {
+    .hero-section{
+        width: 375px;
+        background-image: url(../../images/careers-mobile.png);
+    }
+    .hero__title{
+        width: 295px;
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+}

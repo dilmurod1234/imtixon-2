@@ -1,0 +1,123 @@
+.list-section{
+    padding: 160px 0;
+}
+.list__line{
+    position: relative;
+    width: 70%;
+    height: 15px;
+    background-color: #E5ECF4;
+}
+.list__img{
+    position: absolute;
+    top: -40px;
+    left: 15%;
+}
+.list__img-1{
+    position: absolute;
+    top: -40px;
+    right: 35%;
+}
+.list__img-2{
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+.list{
+    margin-top: 87px;
+    @include flexStyle (center, wrap);
+    gap: 30px;
+}
+.list__item{
+    width: 350px;
+}
+.list__item > img{
+    display: none;
+}
+.list__title{
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: $title-color;
+}
+.list__text{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $gray;
+}
+@media only screen and (max-width: 900px) {
+    .list-section{
+        position: relative;
+    }
+    .list__line{
+        position: absolute;
+        top: 96%;
+        left: -146px;
+        transform: rotateZ(90deg);
+    }
+    .list__img, .list__img-1, .list__img-2{
+        transform: rotateZ(-90deg);
+    }
+    .list{
+        position: absolute;
+        right: 98px;
+        margin-top: 0;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .list__item{
+        width: 398px;
+    }
+}
+@media only screen and (max-width: 693px) {
+    .list__line{
+        display: none;
+    }
+    .list{
+        right: 120px;
+    }
+    .list__item > img{
+        display: block;
+        margin-bottom: 24px;
+    }
+}
+@media only screen and (max-width: 547px) {
+    .list{
+        left: 70px;
+    }
+}
+@media only screen and (max-width: 472px) {
+    .list__item{
+        width: 311px;
+    }
+    .list__item > img{
+        margin: 0 auto;
+        margin-bottom: 24px;
+    }
+    .list__title{
+        margin-bottom: 24px;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: -0.892857px;
+    }
+    .list__text{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 433px) {
+    .list{
+        left: 50px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .list-section{
+        width: 375px;
+    }
+    .list{
+        left: 20px;
+    }
+}

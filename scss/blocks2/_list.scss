@@ -1,0 +1,116 @@
+.list-section{
+    padding: 120px 0 220px;
+    position: relative;
+}
+.list__img{
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+.list__img-1{
+    position: absolute;
+    left: 0;
+    bottom: 78px;
+}
+.list{
+    margin-top: 130px;
+}
+.second-list{
+    margin-top: 370px;
+    display: flex;
+    justify-content: end;
+}
+.list__hidden{
+    display: none;
+}
+.list__item{
+    width: 445px;
+}
+.list__title{
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $title-color;
+    letter-spacing: -2.14286px;
+}
+.list__text{
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: $gray;
+}
+@media only screen and (max-width: 1300px) {
+    .list-section{
+        padding-bottom: 120px;
+    }
+    .list{
+        margin-top: 540px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .second-list{
+        margin-top: 700px;
+    }
+    .list__img-1{
+        bottom: 400px;
+    }
+    .list__item{
+        width: 573px;
+        text-align: center;
+    }
+    .list__title{
+        width: 457px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width: 594px) {
+    .list__img{
+        max-width: 466px;
+        height: 311px;
+    }
+    .list__img-1{
+        max-width: 466px;
+        height: 370px;
+    }
+    .list{
+        margin-top: 400px;
+    }
+    .second-list{
+        margin-top: 567px;
+    }
+    .list__item{
+        width: 311px;
+    }
+    .list__title{
+        width: 311px;
+        margin-bottom: 32px;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 466px) {
+    .list__img{
+        width: 375px;
+        height: 250px;
+    }
+    .list__img-1{
+        width: 375px;
+        height: 300px;
+    }
+    .list{
+        margin-top: 350px;
+    }
+    .second-list{
+        margin-top: 480px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .list-section{
+        width: 375px;
+    }
+}
